@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Chromed Goodreads",
+  "version": "1.0",
+  "description": "Some tweaks to goodreads.com",
+  "permissions": [
+    "https://www.goodreads.com/"
+  ],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["https://*.goodreads.com/*"],
+      "css": ["css/chromed.css"],
+      "js": [
+        "javascripts/jquery.js",
+        "javascripts/chromed.js"
+      ]
+    }
+  ]
+}
+
+
